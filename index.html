@@ -1,0 +1,699 @@
+<!DOCTYPE html><html lang="en"><head>
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--====== Title ======-->
+    <title>VIP Pay</title>
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/png">
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!--====== Line Icons css ======-->
+    <link rel="stylesheet" href="css/LineIcons.css">
+
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="css/default.css">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="css/all.min.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="css/sweetalert2.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+        .floating-btn {
+            width: 60px;
+            height: 60px;
+            background: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            border-radius: 50%;
+            color: rgb(141, 56, 255);
+            font-size: 80px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
+            z-index: 9999;
+            transition: background 0.25s;
+        }
+
+        .floating-btn:hover {
+            color: #7F25FF !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!--====== PRELOADER PART START ======-->
+    <div class="preloader">
+        <div class="loader_34">
+            <div class="ytp-spinner">
+                <div class="ytp-spinner-container">
+                    <div class="ytp-spinner-rotator">
+                        <div class="ytp-spinner-left">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                        <div class="ytp-spinner-right">
+                            <div class="ytp-spinner-circle"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--====== PRELOADER ENDS START ======-->
+
+    <!--====== HEADER PART START ======-->
+
+    <header id="home" class="header-area">
+        <div class="navigation fixed-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg">
+                            <a class="navbar-brand" href="index.html">
+                                
+                                <img src="images/logo_horizontal_sm.png" width="240" height="80" alt="Logo">
+                            </a> <!-- Logo -->
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                                <span class="toggler-icon"></span>
+                            </button>
+
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item active"><a class="page-scroll" href="index.html">Home</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="index.html#about_us">About</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="index.html#why_us">Why Us</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="index.html#qr_pay">QR Pay</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="index.html#services">Services</a></li>
+                                    <li class="nav-item"><a class="page-scroll" href="index.html#contact">Contact</a></li>
+                                    <li class="nav-item">
+                                        <a href="login.html" style="color: #CA38FF !important;">Login</a>
+                                    </li>
+                                </ul>
+                            </div> <!-- navbar collapse -->
+                        </nav> <!-- navbar -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- navigation -->
+
+           <div id="parallax" class="header-content d-flex align-items-center">
+        <div class="header-shape shape-one layer" data-depth="0.10">
+            <img src="images/shape-1.png" alt="Shape">
+        </div> <!-- header shape -->
+        <div class="header-shape shape-tow layer" data-depth="0.30">
+            <img src="images/shape-2.png" alt="Shape">
+        </div> <!-- header shape -->
+        <div class="header-shape shape-three layer" data-depth="0.40">
+            <img src="images/shape-3.png" alt="Shape">
+        </div> <!-- header shape -->
+        <div class="header-shape shape-fore layer" data-depth="0.60">
+            <img src="images/shape-2.png" alt="Shape">
+        </div> <!-- header shape -->
+        <div class="header-shape shape-five layer" data-depth="0.20">
+            <img src="images/shape-1.png" alt="Shape">
+        </div> <!-- header shape -->
+        <div class="header-shape shape-six layer" data-depth="0.15">
+            <img src="images/shape-4.png" alt="Shape">
+        </div> <!-- header shape -->
+        <div class="header-shape shape-seven layer" data-depth="0.50">
+            <img src="images/shape-5.png" alt="Shape">
+        </div> <!-- header shape -->
+        <div class="header-shape shape-eight layer" data-depth="0.40">
+            <img src="images/shape-3.png" alt="Shape">
+        </div> <!-- header shape -->
+        <div class="header-shape shape-nine layer" data-depth="0.20">
+            <img src="images/shape-6.png" alt="Shape">
+        </div> <!-- header shape -->
+        <div class="header-shape shape-ten layer" data-depth="0.30">
+            <img src="images/shape-3.png" alt="Shape">
+        </div> <!-- header shape -->
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-5 col-lg-6">
+                    <div class="header-content-right">
+                        <h4 class="sub-title">receive payment with</h4>
+                        <h1 class="title">VIP Pay</h1>
+                        <p>Sign Up as a Merchant now!</p>
+                        <a class="main-btn" href="#contact">Sign Up</a>
+                    </div> <!-- header content right -->
+                </div>
+                <div class="col-lg-5 offset-xl-2">
+                    <div class="d-none d-lg-block">
+                        <a href="index.html">
+                            <img src="images/promotion_banner_nov22_a.jpg" alt="hero" style="border: solid #7F25FF 7px">
+                        </a>
+                    </div>  <!-- temp header image -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+        <div class="header-social">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="header-social-icon">
+                            <ul>
+                                <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
+                                <li><a href="#"><i class="lni-twitter-original"></i></a></li>
+                                <li><a href="#"><i class="lni-behance-original"></i></a></li>
+                                <li><a href="#"><i class="lni-linkedin-original"></i></a></li>
+                            </ul>
+                        </div> <!-- header social -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- header social -->
+    </div> <!-- header content -->
+
+    </header>
+
+    <!--====== HEADER PART ENDS ======-->
+
+       <!--====== ABOUT US PART START ======-->
+
+    <section id="about_us" class="about-area pt-125 pb-130">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center">
+                        <h2 class="title">About Us</h2>
+                        <p>VIP Pay is a full-fledged payment automation and management service which is built with client privacy and safety as a priority.
+                            Our extensive solutions offer real-time and up-to-trend solutions for the ever-evolving internet market.
+                            <br><br>We provide our clients ranging from e-commerce to social media sales, with the most effective, trendiest and quickest payment automation methods without sacrificing breach of customer data.</p>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== ABOUT US PART ENDS ======-->
+
+    <!--====== WHY US PART START ======-->
+
+    <section id="why_us" class="services-area gray-bg pt-125 pb-130">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center pb-30">
+                        <h2 class="title">Why Us</h2>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <i class="fa fa-user-shield" style="font-size: 45px"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title"><a href="#">Client Safety as a Priority </a></h4>
+                            <p>No more data breach for customers! Transact safely.</p>
+                        </div>
+                    </div> <!-- single service -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <i class="fa fa-robot" style="font-size: 45px"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title"><a href="#">Full Backend and Payment Automation </a></h4>
+                            <p>So clients can just focus on selling!</p>
+                        </div>
+                    </div> <!-- single service -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <i class="lni-mobile"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title"><a href="#">Innovative Solutions</a></h4>
+                            <p>Our solutions are caught up with the most newest payment trends and methods.</p>
+                        </div>
+                    </div> <!-- single service -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <i class="fa fa-coins" style="font-size: 45px"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title"><a href="#">Quick Settlement</a></h4>
+                            <p>Choose from our settlement times to maintain your best cash flow!</p>
+                        </div>
+                    </div> <!-- single service -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <i class="lni-website"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title"><a href="#">Customizable and Flexible</a></h4>
+                            <p>Our extensive framework enables merchants to choose what suits them well.</p>
+                        </div>
+                    </div> <!-- single service -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <i class="fa fa-plug" style="font-size: 45px"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title"><a href="#">API Integration</a></h4>
+                            <p>Let us fully automate your backoffice, and you can focus on selling!</p>
+                        </div>
+                    </div> <!-- single service -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== WHY US PART ENDS ======-->
+
+    <!--====== QR PAY PART START ======-->
+
+    <section id="qr_pay" class="pricing-area pt-125 pb-130">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center pb-25">
+                        <h2 class="title">How To Pay with QR</h2>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-8 col-sm-9">
+                    <div class="single-pricing text-center mt-30">
+                        <img src="images/step1.png" alt="">
+                    </div> <!-- single pricing -->
+                </div>
+                <div class="col-lg-3 col-md-8 col-sm-9">
+                    <div class="single-pricing text-center mt-30">
+                        <img src="images/step2.png" alt="">
+                    </div> <!-- single pricing -->
+                </div>
+                <div class="col-lg-3 col-md-8 col-sm-9">
+                    <div class="single-pricing text-center mt-30">
+                        <img src="images/step3.png" alt="">
+                    </div> <!-- single pricing -->
+                </div>
+                <div class="col-lg-3 col-md-8 col-sm-9">
+                    <div class="single-pricing text-center mt-30">
+                        <img src="images/step4.png" alt="">
+                    </div> <!-- single pricing -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== QR PAY PART ENDS ======-->
+
+    <!--====== WHERE TO QR PART START ======-->
+
+    <section id="qr_pay" class="pricing-area pt-125 pb-130">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center pb-25">
+                        <h2 class="title">Where to QR</h2>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row justify-content-center">
+                <div class="col-xs-6 col-sm-3 col-md-2 text-center">
+                    <img src="images/agrobank.png" alt="">
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2 text-center">
+                    <img src="images/alliance.png" alt="">
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2 text-center">
+                    <img src="images/alliance-islamic.png" alt="">
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2 text-center">
+                    <img src="images/ambank.png" alt="">
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2 text-center">
+                    <img src="images/ambank-islamic.png" alt="">
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2 text-center">
+                    <img src="images/bank-islam.png" alt="">
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2 text-center">
+                    <img src="images/bank-of-china.png" alt="">
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2 text-center">
+                    <img src="images/boost.png" alt="">
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2 text-center">
+                    <img src="images/cimb.png" alt="">
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2 text-center">
+                    <img src="images/cimb-islamic.png" alt="">
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2 text-center">
+                    <img src="images/citibank.png" alt="">
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2 text-center">
+                    <img src="images/finexus.png" alt="">
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2 text-center">
+                    <img src="images/grabpay.png" alt="">
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2 text-center">
+                    <img src="images/hongleong.png" alt="">
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2 text-center">
+                    <img src="images/hongleong-islamic.png" alt="">
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2 text-center">
+                    <img src="images/hsbc.png" alt="">
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2 text-center">
+                    <img src="images/hsbc-amanah.png" alt="">
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2 text-center">
+                    <img src="images/icbc.png" alt="">
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2 text-center">
+                    <img src="images/maybank.png" alt="">
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2 text-center">
+                    <img src="images/maybank-islamic.png" alt="">
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2 text-center">
+                    <img src="images/muamalat.png" alt="">
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2 text-center">
+                    <img src="images/ocbc.png" alt="">
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2 text-center">
+                    <img src="images/ocbc-alamin.png" alt="">
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2 text-center">
+                    <img src="images/publicbank.png" alt="">
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2 text-center">
+                    <img src="images/publicbank-islamic.png" alt="">
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2 text-center">
+                    <img src="images/rhb.png" alt="">
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2 text-center">
+                    <img src="images/rhb-islamic.png" alt="">
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2 text-center">
+                    <img src="images/standardchartered.png" alt="">
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2 text-center">
+                    <img src="images/standardchartered-saadiq.png" alt="">
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2 text-center">
+                    <img src="images/tng.png" alt="">
+                </div>
+                <div class="col-xs-6 col-sm-3 col-md-2 text-center">
+                    <img src="images/UOB.png" alt="">
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== WHERE TO QR PAY PART ENDS ======-->
+
+    <!--====== SERVICES PART START ======-->
+
+    <section id="services" class="services-area gray-bg pt-125 pb-130">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center pb-30">
+                        <h2 class="title">Services</h2>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <i class="fa fa-clock" style="font-size: 45px"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title"><a href="#">Real-time Payment Processing</a></h4>
+                            <p>Real-time tracking and settlement of your e-commerce platform.</p>
+                        </div>
+                    </div> <!-- single service -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <i class="fa fa-store" style="font-size: 45px"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title"><a href="#">Social Media Sales Automation</a></h4>
+                            <p>Automate social media sales (FB / IG)</p>
+                        </div>
+                    </div> <!-- single service -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-8">
+                    <div class="single-service text-center mt-30">
+                        <div class="service-icon">
+                            <i class="fa fa-globe-asia" style="font-size: 45px"></i>
+                        </div>
+                        <div class="service-content">
+                            <h4 class="service-title"><a href="#">Regional Integration</a></h4>
+                            <p>Start selling all across South East Asia with our solutions and reach a broader audience!</p>
+                        </div>
+                    </div> <!-- single service -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== SERVICES PART ENDS ======-->
+
+    <!--====== CONTACT PART START ======-->
+
+    <section id="contact" class="contact-area pt-125 pb-130">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-title text-center pb-25">
+                        <h2 class="title">Contact Us</h2>
+                    </div> <!-- section title -->
+                </div>
+            </div> <!-- row -->
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-7">
+                    <div class="contact-box text-center mt-30">
+                        <div class="contact-icon">
+                            <i class="lni-map-marker"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h6 class="contact-title">Address</h6>
+                            <p>Griffith Corporate Centre, P.O. Box 1510, Beachmont Kingstown St. Vincent and The Grenadines.</p>
+                        </div>
+                    </div> <!-- contact box -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-7">
+                    <div class="contact-box text-center mt-30">
+                        <div class="contact-icon">
+                            <i class="lni-telegram"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h6 class="contact-title">Telegram</h6>
+                            <p><a href="https://t.me/">https://t.me/</a></p>
+                            <br><br>
+                        </div>
+                    </div> <!-- contact box -->
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-7">
+                    <div class="contact-box text-center mt-30">
+                        <div class="contact-icon">
+                            <i class="lni-envelope"></i>
+                        </div>
+                        <div class="contact-content">
+                            <h6 class="contact-title">Email</h6>
+                            <p><a href="mailto:support@VIPPay">support@VIPPay</a></p>
+                            <br><br>
+                        </div>
+                    </div> <!-- contact box -->
+                </div>
+            </div> <!-- row -->
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contact-form pt-30">
+                        <form role="form" id="contact-form" method="post">
+                            <input type="hidden" name="_token" value="iIDxygIA6Xq28Bag7K7hYLcNfe8wjLSQ6GocRZIV">
+                            <div class="single-form">
+                                <input type="text" name="guestName" placeholder="Name" required="">
+                            </div> <!-- single form -->
+                            <div class="single-form">
+                                <input type="email" name="guestEmail" placeholder="Email" required="">
+                            </div> <!-- single form -->
+                            <div class="single-form">
+                                <textarea name="guestMessage" placeholder="Message" required=""></textarea>
+                            </div> <!-- single form -->
+                            <p class="form-message"></p>
+                            <div class="single-form">
+                                <button class="main-btn" id="submit-btn" type="submit">Submit  <i class="fa fa-spinner fa-spin" id="spinner" style="display: none"></i></button>
+                            </div> <!-- single form -->
+                        </form>
+                    </div> <!-- contact form -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-map mt-60">
+                        <div class="gmap_canvas">
+                            <div style="width: 100%"><iframe id="gmap_canvas" width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3909.033732200127!2d104.83581407505335!3d11.54943798865028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTHCsDMyJzU4LjAiTiAxMDTCsDUwJzE4LjIiRQ!5e0!3m2!1sen!2skh!4v1707618824439!5m2!1sen!2skh"></iframe></div>
+                        </div>
+                    </div> <!-- contact map -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <a href="https://t.me/" class="material-icons floating-btn">telegram</a>
+    <!--====== CONTACT PART ENDS ======-->
+
+    <!--====== FOOTER PART START ======-->
+
+    <footer id="footer" class="footer-area">
+        <div class="footer-widget pt-130 pb-130">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="footer-content text-center">
+                            <a href="index.html">
+                                
+                                <img src="images/logo_horizontal_sm.png" alt="Logo">
+                            </a>
+                            <p class="mt-" style="font-size: 1.35em">Do it Safe. Do it Fast. Do it now with VIP Pay.</p>
+                            <br>
+                            <ul>
+                                <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
+                                <li><a href="#"><i class="lni-twitter-original"></i></a></li>
+                                <li><a href="#"><i class="lni-pinterest"></i></a></li>
+                                <li><a href="#"><i class="lni-linkedin-original"></i></a></li>
+                            </ul>
+                        </div> <!-- footer content -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- footer widget -->
+        <div class="footer-copyright pb-20">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="copyright-text text-center pt-20">
+                            <p>Copyright © 2024. VIP Pay</p>
+                        </div> <!-- copyright text -->
+                    </div>
+                </div> <!-- row -->
+            </div> <!-- container -->
+        </div> <!-- footer widget -->
+    </footer>
+
+    <!--====== FOOTER PART ENDS ======-->
+
+    <!--====== BACK TOP TOP PART START ======-->
+
+    <a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a>
+
+    <!--====== BACK TOP TOP PART ENDS ======-->
+
+
+    <!--====== jquery js ======-->
+    <script src="js/modernizr-3.6.0.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+
+    <!--====== Magnific Popup js ======-->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <!--====== Parallax js ======-->
+    <script src="js/parallax.min.js"></script>
+
+    <!--====== Counter Up js ======-->
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+
+
+    <!--====== Appear js ======-->
+    <script src="js/jquery.appear.min.js"></script>
+
+    <!--====== Scrolling js ======-->
+    <script src="js/scrolling-nav.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+
+
+    <!--====== Main js ======-->
+    <script src="js/main.js"></script>
+
+    <script src="js/sweetalert2.min.js"></script>
+
+    <!--Ajax Setup-->
+    <script>
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+    </script>
+
+    <script>
+        $("#contact-form").on("submit", function(e){
+            e.preventDefault();
+            $('#submit-btn').prop('disabled', true);
+            $('#spinner').show();
+            $.ajax({
+                url: "https://doitnow.asia/send_enquiries",
+                type:'POST',
+                data: {
+                    _token : $("input[name='_token']").val(),
+                    guestName : $("input[name='guestName']").val(),
+                    guestEmail : $("input[name='guestEmail']").val(),
+                    guestMessage : $("textarea[name='guestMessage']").val(),
+                },
+                success: function(data) {
+                    Swal.fire(
+                        'Success',
+                        'We have received your enquiries and will get back to you soon!',
+                        'success'
+                    )
+                    $('#submit-btn').prop('disabled', false);
+                    $('#spinner').hide();
+                },
+                error: function (data){
+                    console.log(data);
+                }
+            });
+            return false;
+        })
+
+    </script>
+
+
+
+</body></html>
