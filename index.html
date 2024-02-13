@@ -543,15 +543,14 @@
                 <div class="col-lg-6">
                     <div class="contact-form pt-30">
                         <form role="form" id="contact-form" method="post">
-                            <input type="hidden" name="_token" value="iIDxygIA6Xq28Bag7K7hYLcNfe8wjLSQ6GocRZIV">
                             <div class="single-form">
-                                <input type="text" name="guestName" placeholder="Name" required="">
+                                <input type="text" id="name" placeholder="Enter your Name" required="" autocomplete="off">
                             </div> <!-- single form -->
                             <div class="single-form">
-                                <input type="email" name="guestEmail" placeholder="Email" required="">
+                                <input type="email" id="email" placeholder="Enter your Email" required="" autocomplete="off">
                             </div> <!-- single form -->
                             <div class="single-form">
-                                <textarea name="guestMessage" placeholder="Message" required=""></textarea>
+                                <textarea id="message" placeholder="Enter your Message...." required="" minlength="10"></textarea>
                             </div> <!-- single form -->
                             <p class="form-message"></p>
                             <div class="single-form">
@@ -653,7 +652,7 @@
 
     <script src="js/sweetalert2.min.js"></script>
 
-    <!--Ajax Setup-->
+    <!--===== Ajax Setup =====-->
     <script>
         $.ajaxSetup({
             headers: {
@@ -662,38 +661,45 @@
         });
     </script>
 
+    <!--===== Email System Setup =====-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
     <script>
+
         $("#contact-form").on("submit", function(e){
             e.preventDefault();
-            $('#submit-btn').prop('disabled', true);
-            $('#spinner').show();
-            $.ajax({
-                url: "https://doitnow.asia/send_enquiries",
-                type:'POST',
-                data: {
-                    _token : $("input[name='_token']").val(),
-                    guestName : $("input[name='guestName']").val(),
-                    guestEmail : $("input[name='guestEmail']").val(),
-                    guestMessage : $("textarea[name='guestMessage']").val(),
-                },
-                success: function(data) {
-                    Swal.fire(
-                        'Success',
-                        'We have received your enquiries and will get back to you soon!',
-                        'success'
-                    )
-                    $('#submit-btn').prop('disabled', false);
-                    $('#spinner').hide();
-                },
-                error: function (data){
-                    console.log(data);
-                }
-            });
-            return false;
+
+            const button = document.getElementById("submit-btn");
+            button.disabled = true;
+
+                $('#spinner').show();
+
+            setTimeout(() => {
+                
+
+                  let name = document.getElementById("name").value;
+                  let email = document.getElementById("email").value;
+                  let message = document.getElementById("message").value;
+
+                  let body = "Name: " + name + "<br/> Email: " + email + "<br/> Messages: " + message;
+
+                Email.send({
+                SecureToken : "87bb4d9a-b2b2-44ba-b90a-0c4276ccee9f",
+                To : 'vippg.marketing@gmail.com',
+                From : "vippg.marketing@outlook.com",
+                Subject : "message From Contact Form",
+                Body : body
+                 }).then(
+                message => alert("Mail has been sent successfully!")
+                 );
+                 
+                button.disabled = false;
+                $('#spinner').hide();
+
+            }, 1200);
+            
         })
 
     </script>
-
-
 
 </body></html>
